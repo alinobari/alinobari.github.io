@@ -1,0 +1,68 @@
+.header{
+    background: url("../img/background.jpg") no-repeat top center fixed;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 50px;
+}
+
+body {
+  background-color: #222;
+}
+.plate {
+  width: 410px;
+  margin: 10% auto;
+}
+
+.seaweed_font {
+  font-family: 'Seaweed Script', cursive;
+  color: #fff;
+  text-align: center;
+  font-size: 40px;
+  position: relative;
+  margin:0;
+}
+.seaweed_font span {
+  padding: 0 0.3em;
+}
+.seaweed_font:before {
+  content:"";
+  display: block;
+  position: absolute;
+  z-index:-1;
+  top: 50%;
+  width: 100%;
+  border-bottom: 3px solid #fff;
+}
+
+.fancy {
+  margin: 0% 0% 0% 0%;
+  line-height: 0.5;
+  text-align: center;
+}
+.fancy span {
+  display: inline-block;
+  position: relative;  
+}
+.fancy span:before,
+.fancy span:after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+  top: 0;
+  width: 150%;
+}
+.fancy span:before {
+  right: 100%;
+  margin-right: 10px;
+}
+.fancy span:after {
+  left: 100%;
+  margin-left: 8px;
+}
+
