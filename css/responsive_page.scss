@@ -12,18 +12,6 @@ $tr-easing: cubic-bezier(0.68, -0.55, 0.265, 1.55);
   box-sizing: border-box;
 }
 
-html {
-  height: 100%;
-  overflow: hidden;
-}
-
-body {
-  font-family: 'Dosis', sans-serif;
-  font-weight: 500;
-  background-color: #4a24a2;
-  background-image: radial-gradient(circle at 50% 40%, rgba(#fff, 0.225), transparent 400px);
-}
-
 .device {
   position: absolute;
   top: 50%;
@@ -260,25 +248,33 @@ body {
 
 .instructions {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 290px;
-  z-index: -1;
-  font-size: 1.5rem;
+  //top: 50%;
+  //left: 50%;
+  //width: 290px;
+  //z-index: -1;
+  font-size: 20px;
   text-align: center;
-  color: rgba(white, 0.3);
-  transform: translate(-50%, 150px);
-  transition: tr(transform), tr(opacity);
-  
-  @media (min-width: $bp-sm) {
-    transform: translate(-50%, 80px);  
+  //color: rgba(white, 0.3);
+  //transform: translate(-50%, 150px);
+  //transition: tr(transform), tr(opacity);
+} 
+  @media only screen and (min-width: 480px) {
+    .instructions {
+    font-size: 20px;
+    //transform: translate(-50%, 80px);
+    }  
   }
   
-  @media (min-width: $bp-md) {
-    transform: translate(-50%, 180px);  
+  @media only screen and (min-width: 768px) {
+    .instructions {
+    font-size: 30px;
+    //transform: translate(-50%, 180px);  
+    }
   }
   
-  @media (min-width: $bp-lg) {
-    transform: translate(-50%, 200px);  
+  @media only screen and (min-width: 1024px) {
+    .instructions {
+    font-size: 40px;
+    //transform: translate(-50%, 200px);  
+    }
   }
-}
