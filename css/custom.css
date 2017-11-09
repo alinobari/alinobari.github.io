@@ -1,6 +1,8 @@
 .header{
-    background: url("../img/background.jpg") no-repeat top center fixed;
+    background: url("../img/background.jpg") no-repeat top center;
     background-size: cover;
+    background-position: 60%;
+    position: relative;
     height: 100%;
     width: 100%;
     margin: 0;
@@ -77,23 +79,24 @@ body_custom {
 @media only screen and (min-width: 310px) {
   .fancy span:after, span:before{
     width: 40%;
-  }  
+  } 
+
 }
 
 @media only screen and (min-width: 480px) {
   .fancy span:after, span:before{
-    width: 70%;
+    width: 60%;
   }  
 }
 
 @media only screen and (min-width: 740px) {
   .fancy span:after, span:before{
-    width: 130%;
+    width: 100%;
   }
 }
 
 @media only screen and (min-width: 1024px) {
   .fancy span:after, span:before{
-    width: 250%;
+    width: 200%;
   }
 }
