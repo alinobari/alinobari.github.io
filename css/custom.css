@@ -17,18 +17,23 @@ body_custom {
   margin: 10% auto;
 }
 
-.seaweed_font {
-  font-family: 'Seaweed Script', cursive;
+@font-face {
+  font-family: 'SeaweedScript';
+  src: url('fonts/SeaweedScript.ttf')
+}
+
+.seaweed-font {
+  font-family: SeaweedScript, cursive;
   color: #fff;
   text-align: center;
   font-size: 40px;
   position: relative;
   margin:0;
 }
-.seaweed_font span {
+.seaweed-font span {
   padding: 0 0.3em;
 }
-.seaweed_font:before {
+.seaweed-font:before {
   content:"";
   display: block;
   position: absolute;
@@ -52,17 +57,43 @@ body_custom {
   content: "";
   position: absolute;
   height: 5px;
-  border-bottom: 1px solid white;
-  border-top: 1px solid white;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
   top: 0;
-  width: 150%;
+
 }
 .fancy span:before {
   right: 100%;
-  margin-right: 10px;
+  margin-right: 11px;
 }
 .fancy span:after {
   left: 100%;
   margin-left: 8px;
 }
 
+
+/*SIZE PARAMETERS*/
+
+@media only screen and (min-width: 250px) {
+  .fancy span:after, span:before{
+    width: 90%;
+  }  
+}
+
+@media only screen and (min-width: 480px) {
+  .fancy span:after, span:before{
+    width: 150%;
+  }  
+}
+
+@media only screen and (min-width: 768px) {
+  .fancy span:after, span:before{
+    width: 180%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .fancy span:after, span:before{
+    width: 250%;
+  }
+}
