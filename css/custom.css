@@ -56,9 +56,9 @@ body_custom {
 .fancy span:after {
   content: "";
   position: absolute;
-  height: 5px;
-  border-bottom: 1px solid black;
-  border-top: 1px solid black;
+  height: 6px;
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
   top: 0;
 
 }
@@ -74,21 +74,21 @@ body_custom {
 
 /*SIZE PARAMETERS*/
 
-@media only screen and (min-width: 250px) {
+@media only screen and (min-width: 310px) {
   .fancy span:after, span:before{
-    width: 90%;
+    width: 40%;
   }  
 }
 
 @media only screen and (min-width: 480px) {
   .fancy span:after, span:before{
-    width: 150%;
+    width: 70%;
   }  
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 740px) {
   .fancy span:after, span:before{
-    width: 180%;
+    width: 130%;
   }
 }
 
